@@ -25,6 +25,7 @@ int totalItens = 0; // Quantos itens já adicionamos
 // ------------------------------------------------
 
 /**
+ * Limpa o buffer de entrada do teclado.
  * Essencial para evitar erros ao misturar scanf com fgets/leitura de strings.
  */
 void limparBuffer() {
@@ -35,7 +36,8 @@ void limparBuffer() {
 }
 
 /**
-  * (Funcionalidade: Listar os itens cadastrados)
+ * Lista todos os itens cadastrados no inventário.
+ * (Funcionalidade: Listar os itens cadastrados)
  */
 void listarItens() {
     printf("\n--- INVENTÁRIO BÁSICO (%d/%d Slots) ---\n", totalItens, MAX_SLOTS);
@@ -60,6 +62,7 @@ void listarItens() {
 
 
 /**
+ * Adiciona um novo item à mochila.
  * (Funcionalidade: Adicionar itens)
  */
 void adicionarItem() {
@@ -102,7 +105,8 @@ void adicionarItem() {
 
 
 /**
-  * NOTA: Para simplificar (sem buscas especializadas), vamos pedir a Posição.
+ * Remove um item da mochila pelo índice (posição no vetor).
+ * NOTA: Para simplificar (sem buscas especializadas), vamos pedir a Posição.
  * (Funcionalidade: Remover itens pelo nome - Adaptação para simplificação)
  */
 void removerItem() {
